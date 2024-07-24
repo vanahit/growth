@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
                     </Row>
                 </SNavItem>
                 {menuItems.map((item) => (
-                    <SNavItem key={item.path} onClick={onMenuClick}><NavLink to={item.path}>
+                    <SNavItem key={item.path} onClick={onCloseClick}><NavLink to={item.path}>
                       {item.title}</NavLink></SNavItem>))}
             </SNavItemsContainer>
             <Row gutter={[24, 12]} wrap={false}>
