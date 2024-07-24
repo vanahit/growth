@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import Button from "components/Button";
-import { SErrorPageContainer, SErrorMessage } from './ErrorPage.styles';
+import { SErrorPageContainer, SErrorMessage } from './ErrorPage.styles.tsx';
 
 
 const ErrorPage = () => {

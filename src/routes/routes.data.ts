@@ -4,7 +4,7 @@ import {ERoutePath, TRoute} from "./routes.types.ts";
 const Posts = lazy(() => import('../pages/Posts'));
 const Users = lazy(() => import('../pages/Users'));
 const UserDetails = lazy(() => import('../pages/Users/UserDetails'));
-const ErrorPage = lazy(() => import('../pages/ErrorPage'));
+const ErrorPage = lazy(() => import('../components/ErrorPage'));
 
 
 export const routes: TRoute[] = [

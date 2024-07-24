@@ -98,18 +98,18 @@ src
 ├── components
 │   ├── Button
 │   │   ├── Button.styles.ts
-│   │   └── index.tsx
+│   │   └── index.ts
 │   ├── Page
 │   │   ├── Page.styles.ts
-│   │   └── index.tsx
+│   │   └── index.ts
 │   ├── Posts
 │   │   ├── PostItem.tsx
 │   │   ├── PostsList.tsx
-│   │   └── index.tsx
+│   │   └── index.ts
 │   └── Users
 │       ├── DeleteUser.tsx
 │       ├── UsersList.tsx
-│       └── index.tsx
+│       └── index.ts
 ├── hooks
 │   ├── useDebounce.ts
 │   └── useLocalStorage.ts
@@ -118,10 +118,10 @@ src
 │   ├── Posts
 │   │   ├── CreatePost.tsx
 │   │   ├── Posts.styles.ts
-│   │   └── index.tsx
+│   │   └── index.ts
 │   ├── Users
 │   │   ├── Users.styles.ts
-│   │   └── index.tsx
+│   │   └── index.ts
 ├── redux
 │   ├── apiSlices
 │   │   ├── posts.slice.ts
@@ -134,9 +134,9 @@ src
 │   │   ├── users.types.ts
 │   ├── store.ts
 ├── routes
-│   ├── index.tsx
+│   ├── index.ts
 │   └── routes.types.ts
-└── index.tsx
+└── index.ts
 ```
 
 ## API and Business Logic
