@@ -1,4 +1,4 @@
-import React, { Component, ReactNode } from 'react';
+import React, { Component } from 'react';
 import ErrorPage from "../ErrorPage";
 import {ErrorBoundaryProps, ErrorBoundaryState} from "./ErrorBoundary.types.ts";
 
