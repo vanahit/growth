@@ -22,7 +22,7 @@ describe('Card', () => {
 
     it('does not render actions when not provided', () => {
         const {  ...propsWithoutActions } = defaultProps;
-        render(<Card {...propsWithoutActions} />);
+        render(<Card {...propsWithoutActions} actions={undefined} />);
         expect(screen.queryByText('Action')).not.toBeInTheDocument();
     });
 });
