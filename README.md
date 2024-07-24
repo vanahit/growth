@@ -111,17 +111,18 @@ src
 │       ├── UsersList.tsx
 │       └── index.tsx
 ├── hooks
-│   ├── useDebounce.ts
-│   └── useLocalStorage.ts
+│   ├── useDebounce.tsx
 ├── pages
-│   ├── Home.tsx
 │   ├── Posts
 │   │   ├── CreatePost.tsx
 │   │   ├── Posts.styles.ts
 │   │   └── index.tsx
 │   ├── Users
+│       ├── UserDetails
+│       ├── DeleteUser
 │   │   ├── Users.styles.ts
 │   │   └── index.tsx
+
 ├── redux
 │   ├── apiSlices
 │   │   ├── posts.slice.ts
@@ -132,11 +133,15 @@ src
 │   ├── types
 │   │   ├── posts.types.ts
 │   │   ├── users.types.ts
+│   ├── urls
+│   │   ├── posts.url.ts
+│   │   ├── users.url.ts
 │   ├── store.ts
 ├── routes
 │   ├── index.tsx
 │   └── routes.types.ts
-└── index.tsx
+│   └── routes.data.ts
+└── index.ts
 ```
 
 ## API and Business Logic

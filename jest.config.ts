@@ -29,7 +29,7 @@ export default {
     collectCoverageFrom: [
         'src/**/*.{js,jsx,ts,tsx}',
         '!src/**/*.d.ts',
-        '!src/index.tsx',
+        '!src/index.ts',
         '!src/serviceWorker.ts',
         '!src/setupTests.ts'
     ],
