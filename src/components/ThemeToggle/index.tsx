@@ -1,9 +1,9 @@
 import {useContext} from "react";
 import {Col, Row} from "components/Grid";
 import {EIconNames, Icon} from "components/Icon";
-import {colors} from "components/ThemeProvider/variables/colors.ts";
+import {colors} from "themeProvider/variables/colors.ts";
 import Toggle from "components/Toggle";
-import { ThemeContext } from "components/ThemeProvider";
+import { ThemeContext } from "themeProvider";
 
 
 const ThemeToggle = () => {

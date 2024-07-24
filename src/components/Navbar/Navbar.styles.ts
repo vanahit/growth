@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {mediaSizes} from "components/ThemeProvider/variables/mediaSizes.ts";
+import {mediaSizes} from "themeProvider/variables/mediaSizes.ts";
 
 const SNavbarContainer = styled.nav`
     display: flex;

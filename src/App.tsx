@@ -1,8 +1,8 @@
-import ThemeProviderComponent from "components/ThemeProvider";
+import ThemeProviderComponent from "themeProvider";
 import {BrowserRouter} from "react-router-dom";
 import store from "redux/store.ts";
 import {Provider} from "react-redux";
-import ErrorBoundary from "components/ErrorBoundery";
+import ErrorBoundary from "ErrorBoundery";
 import Routes from "./routes";
 
 function App() {

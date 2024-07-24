@@ -9,4 +9,5 @@ export type TRoute = {
 
 export enum ERoutePath {
     USERS = 'users',
+    PAGE_NOT_FOUND = '404',
 }

@@ -1,5 +1,5 @@
 import styled, {css} from "styled-components";
-import {mediaSizes, TSize} from "components/ThemeProvider/variables/mediaSizes.ts";
+import {mediaSizes, TSize} from "themeProvider/variables/mediaSizes.ts";
 import { IStyledColProps, IStyledRowProps} from "./Grid.types.ts";
 
 const getGutter = (gutter?: number | [number, number]) => {

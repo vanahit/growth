@@ -30,7 +30,7 @@ const Users = () => {
             key: `fullName`,
             header: 'Full Name',
             sortable: true,
-            width: '300px',
+            width: '250px',
             render: ({ row }) => {
                 return (
                     <div

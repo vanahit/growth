@@ -1,4 +1,4 @@
-import { mediaSizes } from 'components/ThemeProvider/variables/mediaSizes';
+import { mediaSizes } from 'themeProvider/variables/mediaSizes';
 import styled from 'styled-components';
 
 

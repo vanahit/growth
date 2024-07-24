@@ -22,4 +22,5 @@ export type IIconProps = {
   className?: string;
   onClick?: (e?: MouseEvent) => void;
   dataTestId?: string;
+  role?: string;
 };

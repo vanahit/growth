@@ -1,0 +1,2 @@
+import{e as s,j as r}from"./index-CVFg64WI.js";import{a as c}from"./react-CQo9HC6H.js";import"./styled-components-BbBSjn3f.js";import"./react-router-BQRzHQ5X.js";import"./redux-toolkit-BcoMyLRW.js";import"./redux-C2XGIlQH.js";import"./transition-group-DFMasnQE.js";const j=({children:o,onSuccess:t,id:a})=>{const[e,{isLoading:i}]=s(),n=c.cloneElement(o,{onClick:async()=>{try{await e(a).unwrap(),t&&t()}catch{}},className:"pointer",loading:i});return r.jsx(r.Fragment,{children:n})};export{j as DeleteUser,j as default};
+//# sourceMappingURL=index-CNBg9Hrc.js.map

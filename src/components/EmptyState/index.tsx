@@ -1,15 +1,8 @@
-import React, {ReactNode} from 'react';
-import {EIconNames} from "components/Icon/Icon.type.ts";
 import { Icon } from 'components/Icon/index.tsx';
 import { Col } from 'components/Grid/index.tsx';
 import {SEmptyStateContainer, SEmptyStateIcon, SEmptyStateMessage} from './EmptyState.styles.ts'
+import {IEmptyStateProps} from "./EmptyState.types.ts";
 
-
-interface IEmptyStateProps {
-    message: string;
-    icon?: EIconNames
-    action?: ReactNode
-}
 
 
 const EmptyState: React.FC<IEmptyStateProps> = ({message, action, icon}) => {
