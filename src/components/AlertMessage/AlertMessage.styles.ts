@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {TSize} from "components/ThemeProvider/variables/mediaSizes.ts";
-import {colors} from "components/ThemeProvider/variables/colors.ts";
+import {TSize} from "themeProvider/variables/mediaSizes.ts";
+import {colors} from "themeProvider/variables/colors.ts";
 import {TAlertMessageType} from "./AlertMessage.type.ts";
 
-const messageColorsByType: {
+export const messageColorsByType: {
     [key in TAlertMessageType]: {
         bg: string;
         color: string;

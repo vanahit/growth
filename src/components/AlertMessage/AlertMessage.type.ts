@@ -1,4 +1,4 @@
-import {TSize} from "components/ThemeProvider/variables/mediaSizes.ts";
+import {TSize} from "themeProvider/variables/mediaSizes.ts";
 
 export type TAlertMessageType = 'success' | 'danger' | 'warning' | 'info' | 'default';
 export interface IAlertMessageType {

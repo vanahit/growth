@@ -11,14 +11,16 @@ const Icon: FC<IIconProps> = ({
   size = 24,
   icon,
   className = '',
+    role,
   onClick,
   dataTestId = '',
     loading,
   ...props
 }) => {
   return (
-        loading ? <Loading size={size - 4}/> :
+        loading ? <Loading data-testid='icon-loading' size={size - 4}/> :
             <IcomoonReact
+                role={role}
                 data-testid={dataTestId}
                 className={`icon ${className}`}
                 iconSet={iconSet}

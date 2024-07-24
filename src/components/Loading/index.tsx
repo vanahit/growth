@@ -3,7 +3,7 @@ import {ILoadingProps} from "./Loading.types.ts";
 
 
 const Loader = ({ size = 40, centered = false }: ILoadingProps) => {
-    return <SLoader className='loading' $centered={centered} $size={size} />;
+    return <SLoader data-testid='loading' className='loading' $centered={centered} $size={size} />;
 };
 
 export default Loader;
