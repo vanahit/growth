@@ -24,6 +24,7 @@ export default defineConfig({
                 '.ts': 'tsx',
                 '.js': 'jsx',
             },
+            treeShaking: true,
         },
         exclude: [],
     },
