@@ -98,7 +98,7 @@ src
 ├── components
 │   ├── Button
 │   │   ├── Button.styles.ts
-│   │   └── index.ts
+│   │   └── index.tsx
 │   ├── Page
 │   │   ├── Page.styles.ts
 │   │   └── index.tsx
