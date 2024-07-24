@@ -33,14 +33,12 @@ describe('EmptyState', () => {
     });
 
     it('does not render icon when not provided', () => {
-        const { ...propsWithoutIcon } = defaultProps;
-        render(<EmptyState {...propsWithoutIcon} />);
+        render(<EmptyState  message={defaultProps.message} action={defaultProps.action} />);
         expect(screen.queryByTestId('icon')).not.toBeInTheDocument();
     });
 
     it('does not render action when not provided', () => {
-        const { ...propsWithoutAction } = defaultProps;
-        render(<EmptyState {...propsWithoutAction} />);
+        render(<EmptyState message={defaultProps.message} icon={defaultProps.icon} />);
         expect(screen.queryByText('Retry')).not.toBeInTheDocument();
     });
 });
