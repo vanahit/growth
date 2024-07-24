@@ -1,4 +1,3 @@
-
 # **Growth App**
 
 Growth is a React application built with Vite, utilizing styled-components for custom component styling and theming,
@@ -11,6 +10,8 @@ React Router is used for routing, and the Context API is employed for state mana
 - [Description](#description)
 - [Installation](#installation)
 - [Build and Preview](#build-and-preview)
+- [Error Handling](#error-handling)
+- [Testing](#testing)
 - [Usage](#usage)
 - [Features](#features)
 - [Folder Structure](#folder-structure)
@@ -47,66 +48,95 @@ To preview the built project, run:
 npm run preview
 ```
 
+## Error Handling
+
+App employs several error handling strategies to ensure robust and user-friendly application behavior:
+
+1. **Error Boundary**: An error boundary is implemented to catch and handle unexpected JavaScript errors in the future, possibly integrating with error reporting tools.
+2. **404 Not Found Page**: A custom 404 not found page is provided to handle cases where routes do not match any defined paths.
+3. **API Interactions**: For API interactions, try-catch blocks are used along with error handling within useEffect hooks, as Redux RTK hooks provide error states.
+4. **Enums and Objects**: When dealing with objects or enums, a switch statement is used with a default case to handle unexpected values.
+6. **Redux RTK Middleware**: Middleware is will be implemented for Redux RTK to handle errors based on their type, such as 500 or other HTTP status codes.
+
+## Testing
+
+The project is set up for testing using Jest and React Testing Library.
+
+- **Running Tests**: You can run tests using the command:
+  ```
+  npm run test
+  ```
+- **Test Coverage**: To view test coverage, run:
+  ```
+  npm run test:coverage
+  ```
+- **Mocking APIs**: For future integration tests, the Mock Service Worker library can be used to mock APIs.
+
 ## Usage
 
-The application consists of three main pages:
+The application consists of various components and features. Here is how you can use the application:
 
-* **Home Page**: Displays a list of posts with the ability to create and delete posts.
-* **Users Data Table**: Shows user data with functionality to sort columns, search within two columns, and delete users.
-* **User Details Page**: Provides detailed user data with the option to delete the user.
+* Navigate through different sections using the navigation bar.
+* Create, read, update, and delete posts and users through the respective pages.
+* Toggle between light and dark themes using the theme switcher.
 
-## Used technologies
+## Features
 
-### TypeScript
-
-The entire project is written in TypeScript for enhanced type safety using enums, types, interfaces, and generic types.
-
-### Styled Components
-
-Custom styling with support for dark and light themes.
-
-### Redux Toolkit
-
-Utilized with RTK Query for API handling and state management, making API call handling easy and efficient with built-in caching mechanisms.
-Redux RTK makes API call handling very easy and fast for development. It has a caching system for better performance, which can be updated after some calls or updated manually. Performance can be improved by updating front cache data first and then undoing the action if the server fails. This is a flexible tool to handle various problems, including API calls with side effects.
-
-### Context API
-
-For state management within multiple components.
-
-### React Router
-
-Used for routing between pages.
-
+* **Light and Dark Themes**: Toggle between light and dark themes.
+* **CRUD Operations**: Create, read, update, and delete posts and users.
+* **Responsive Design**: The application is fully responsive and works on all devices.
+* **State Management**: Efficient state management using Redux Toolkit and Context API.
+* **Type Safety**: Comprehensive use of TypeScript for type safety.
 
 ## Folder Structure
 
-The folder structure follows a consistent pattern to separate concerns and layers effectively:
+The project has a well-organized folder structure:
 
 ```
-assets
-components
-  ├── Page
-  ├     ├── Page.styles.ts
-  ├     ├── Page.types.ts
-  ├     └── index.tsx 
-pages
-  ├── Users
-  ├    ├── Oter components
-  ├    ├── Users.styles.ts
-  ├    └── index.tsx 
-routes
-hooks
-redux
-  ├── apiSlices
-  ├     ├── posts.slice.ts    
-  ├── converters 
-  ├     ├── posts.converters.ts
-  ├   types 
-  ├       ├── posts.types.ts
-  ├   urls 
-  ├       ├── posts.urls.ts
-  ├   store.ts
+src
+├── assets
+├── components
+│   ├── Button
+│   │   ├── Button.styles.ts
+│   │   └── index.tsx
+│   ├── Page
+│   │   ├── Page.styles.ts
+│   │   └── index.tsx
+│   ├── Posts
+│   │   ├── PostItem.tsx
+│   │   ├── PostsList.tsx
+│   │   └── index.tsx
+│   └── Users
+│       ├── DeleteUser.tsx
+│       ├── UsersList.tsx
+│       └── index.tsx
+├── hooks
+│   ├── useDebounce.ts
+│   └── useLocalStorage.ts
+├── pages
+│   ├── Home.tsx
+│   ├── Posts
+│   │   ├── CreatePost.tsx
+│   │   ├── Posts.styles.ts
+│   │   └── index.tsx
+│   ├── Users
+│   │   ├── Users.styles.ts
+│   │   └── index.tsx
+├── redux
+│   ├── apiSlices
+│   │   ├── posts.slice.ts
+│   │   ├── users.slice.ts
+│   ├── converters
+│   │   ├── posts.converter.ts
+│   │   ├── users.converter.ts
+│   ├── types
+│   │   ├── posts.types.ts
+│   │   ├── users.types.ts
+│   ├── store.ts
+├── routes
+│   ├── index.tsx
+│   └── routes.types.ts
+└── index.tsx
 ```
 
 ## API and Business Logic
@@ -136,5 +166,5 @@ To ensure optimal performance and efficient bundling, several build optimization
 
 ## Contact
 
-
 Project Link: [https://github.com/vanahit/growth](https://github.com/vanahit/growth)
+
