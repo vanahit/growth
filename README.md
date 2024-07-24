@@ -101,27 +101,28 @@ src
 │   │   └── index.ts
 │   ├── Page
 │   │   ├── Page.styles.ts
-│   │   └── index.ts
+│   │   └── index.tsx
 │   ├── Posts
 │   │   ├── PostItem.tsx
 │   │   ├── PostsList.tsx
-│   │   └── index.ts
+│   │   └── index.tsx
 │   └── Users
 │       ├── DeleteUser.tsx
 │       ├── UsersList.tsx
-│       └── index.ts
+│       └── index.tsx
 ├── hooks
-│   ├── useDebounce.ts
-│   └── useLocalStorage.ts
+│   ├── useDebounce.tsx
 ├── pages
-│   ├── Home.tsx
 │   ├── Posts
 │   │   ├── CreatePost.tsx
 │   │   ├── Posts.styles.ts
-│   │   └── index.ts
+│   │   └── index.tsx
 │   ├── Users
+│       ├── UserDetails
+│       ├── DeleteUser
 │   │   ├── Users.styles.ts
-│   │   └── index.ts
+│   │   └── index.tsx
+
 ├── redux
 │   ├── apiSlices
 │   │   ├── posts.slice.ts
@@ -132,10 +133,14 @@ src
 │   ├── types
 │   │   ├── posts.types.ts
 │   │   ├── users.types.ts
+│   ├── urls
+│   │   ├── posts.url.ts
+│   │   ├── users.url.ts
 │   ├── store.ts
 ├── routes
-│   ├── index.ts
+│   ├── index.tsx
 │   └── routes.types.ts
+│   └── routes.data.ts
 └── index.ts
 ```
 
